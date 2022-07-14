@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Censor",
+    "version": "1.0",
+    "description": "Youtube Censor",
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["content-script.js"]
+        }
+    ],
+    
+    "action": {
+        "default_icon": "img.png",
+        "default_popup": "popup.html",
+        "default_title": "Youtube Censor"
+    }
+}
